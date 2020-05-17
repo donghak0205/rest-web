@@ -1,0 +1,17 @@
+spring:
+# db : mysql
+#  datasource:
+#      url: jdbc:mysql://localhost:3306/test?characterEncoding=UTF-8&serverTimezone=UTC
+#      username: root
+#      password: 1111
+#      driver-class-name: com.mysql.jdbc.Driver
+
+# db : h2
+  datasource:
+    hikari:
+      driver-class-name: org.h2.Driver
+      jdbc-url: jdbc:h2:~/donghak0205;AUTO_SERVER=TRUE
+      username: sa
+      password:
+server:
+  port: 8081
